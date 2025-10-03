@@ -1,0 +1,91 @@
+[gd_scene load_steps=5 format=3 uid="uid://cfcsguwwi6ui1"]
+
+[ext_resource type="Texture2D" uid="uid://dfptn8corxisb" path="res://assets/FluffyIF.webp" id="1_gyfs4"]
+[ext_resource type="Texture2D" uid="uid://c01avllnxg2j7" path="res://assets/Mullet.png" id="2_d5x1h"]
+[ext_resource type="Texture2D" uid="uid://ctntu633rkfqi" path="res://assets/Shark.png" id="3_8mm7a"]
+[ext_resource type="Texture2D" uid="uid://b5dha6o8odpk0" path="res://assets/Grey_fish_swimming.png" id="4_d5x1h"]
+
+[node name="main scene" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1155.0
+offset_bottom = 651.0
+color = Color(0.43529412, 0.6666667, 0.67058825, 1)
+
+[node name="Shark" type="Sprite2D" parent="."]
+position = Vector2(52, 332)
+scale = Vector2(2.0426357, 2.0426357)
+texture = ExtResource("3_8mm7a")
+
+[node name="yellow fish" type="Node2D" parent="Shark"]
+position = Vector2(-141.97343, -125.32826)
+scale = Vector2(0.48956355, 0.48956355)
+
+[node name="FluffyIf" type="Sprite2D" parent="Shark/yellow fish"]
+position = Vector2(899, 229.00003)
+scale = Vector2(0.034663852, 0.034663856)
+texture = ExtResource("1_gyfs4")
+
+[node name="FluffyIf2" type="Sprite2D" parent="Shark/yellow fish"]
+position = Vector2(1033, 273)
+scale = Vector2(0.034663852, 0.034663856)
+texture = ExtResource("1_gyfs4")
+
+[node name="FluffyIf3" type="Sprite2D" parent="Shark/yellow fish"]
+position = Vector2(971, 377)
+scale = Vector2(0.034663852, 0.034663856)
+texture = ExtResource("1_gyfs4")
+
+[node name="yellow fish2" type="Node2D" parent="Shark"]
+position = Vector2(89.590126, -227.15749)
+scale = Vector2(0.48956355, 0.48956355)
+
+[node name="FluffyIf" type="Sprite2D" parent="Shark/yellow fish2"]
+position = Vector2(655, 291.00003)
+scale = Vector2(0.034663852, 0.034663856)
+texture = ExtResource("1_gyfs4")
+
+[node name="FluffyIf2" type="Sprite2D" parent="Shark/yellow fish2"]
+position = Vector2(788, 329.00003)
+scale = Vector2(0.034663852, 0.034663856)
+texture = ExtResource("1_gyfs4")
+
+[node name="FluffyIf3" type="Sprite2D" parent="Shark/yellow fish2"]
+position = Vector2(725, 432.00003)
+scale = Vector2(0.034663852, 0.034663856)
+texture = ExtResource("1_gyfs4")
+
+[node name="red fish" type="Node2D" parent="Shark"]
+position = Vector2(122.88045, -29.863373)
+scale = Vector2(0.48956355, 0.48956355)
+
+[node name="Mullet" type="Sprite2D" parent="Shark/red fish"]
+position = Vector2(684, 130.99997)
+scale = Vector2(0.17815423, 0.17815423)
+texture = ExtResource("2_d5x1h")
+flip_h = true
+
+[node name="Mullet2" type="Sprite2D" parent="Shark/red fish"]
+position = Vector2(470, -30.99998)
+scale = Vector2(0.17815423, 0.17815423)
+texture = ExtResource("2_d5x1h")
+flip_h = true
+
+[node name="gray fish" type="Node2D" parent="Shark"]
+position = Vector2(-25.457304, -162.5351)
+scale = Vector2(0.48956355, 0.48956355)
+
+[node name="GreyFishSwimming" type="Sprite2D" parent="Shark/gray fish"]
+position = Vector2(879, 510)
+scale = Vector2(0.57352954, 0.57352954)
+texture = ExtResource("4_d5x1h")
+
+[node name="GreyFishSwimming2" type="Sprite2D" parent="Shark/gray fish"]
+position = Vector2(745, 581)
+scale = Vector2(0.57352954, 0.57352954)
+texture = ExtResource("4_d5x1h")
+
+[node name="GreyFishSwimming3" type="Sprite2D" parent="Shark/gray fish"]
+position = Vector2(675, 123)
+scale = Vector2(0.57352954, 0.57352954)
+texture = ExtResource("4_d5x1h")
