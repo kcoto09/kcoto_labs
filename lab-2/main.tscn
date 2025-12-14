@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=3 uid="uid://c6r7w6ynu75gg"]
+
+[ext_resource type="Texture2D" uid="uid://dyxfg8lr5x3gh" path="res://assets/cat.png" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://cm8ub4yalr8we" path="res://scripts/cat.gd" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://lqepth7rrvob" path="res://scripts/pop_up_text.gd" id="3_h2yge"]
+[ext_resource type="Script" uid="uid://dx1b6l8m4hpo6" path="res://scripts/click_to_pet.gd" id="4_1bvp3"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Cat" type="Sprite2D" parent="."]
+position = Vector2(557, 350)
+scale = Vector2(0.15055871, 0.1505587)
+texture = ExtResource("1_ig7tw")
+script = ExtResource("2_0xm2m")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="pop up text" type="Label" parent="Control"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 404.0
+offset_top = 459.0
+offset_right = 664.0
+offset_bottom = 519.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_h2yge")
+
+[node name="click to pet" type="Label" parent="Control"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 409.0
+offset_top = 102.0
+offset_right = 669.0
+offset_bottom = 162.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Click to pet
+↓"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_1bvp3")
